@@ -31,6 +31,10 @@ cp tmp/prism.min.js ../../vendor/
 cp tmp/prism-autoloader.min.js ../../vendor/
 cp tmp/prism.min.css ../../vendor/
 cp tmp/prism-okaidia.min.css ../../vendor/
+
+cp node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.css ../../vendor
+cp node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.js ../../vendor
+
 # languages
 mkdir -p ../../vendor/prism/
 cp node_modules/prismjs/components/prism-*.min.js ../../vendor/prism/

@@ -166,6 +166,7 @@ function mount () {
         $('body').classList.add(`_theme-${state.theme}`, `_color-${color}`)
 
         if (state.content.syntax) {
+          $('body').classList.add('line-numbers')
           dom.push(m('link#_prism', {
             rel: 'stylesheet', type: 'text/css',
             href: chrome.runtime.getURL(`/vendor/${color === 'dark' ? 'prism-okaidia' : 'prism'}.min.css`),
